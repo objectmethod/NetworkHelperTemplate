@@ -1,0 +1,2 @@
+#define HTTP_URL_GET_EDF_RECIPES @"http://www.marthastewart.com/services/json/views/edf_recipes.json"
+#define HTTP_URL_POST_TAXONOMY_TERM @"http://www.marthastewart.com/services/json/term/selectNodes.json"
