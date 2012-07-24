@@ -23,6 +23,7 @@
 		DD07424915BF08FE00E0A370 /* EdfRecipe.m in Sources */ = {isa = PBXBuildFile; fileRef = DD07424615BF08FE00E0A370 /* EdfRecipe.m */; };
 		DD07424A15BF08FE00E0A370 /* GetEdfRecipesResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = DD07424815BF08FE00E0A370 /* GetEdfRecipesResponse.m */; };
 		DD07424D15BF188F00E0A370 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = DD07424C15BF188F00E0A370 /* Constants.m */; };
+		DD24FEC415BF356C00EB14FE /* TaxonomyTermViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD24FEC315BF356C00EB14FE /* TaxonomyTermViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,8 @@
 		DD07424815BF08FE00E0A370 /* GetEdfRecipesResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetEdfRecipesResponse.m; sourceTree = "<group>"; };
 		DD07424B15BF188F00E0A370 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		DD07424C15BF188F00E0A370 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		DD24FEC215BF356C00EB14FE /* TaxonomyTermViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaxonomyTermViewController.h; sourceTree = "<group>"; };
+		DD24FEC315BF356C00EB14FE /* TaxonomyTermViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaxonomyTermViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				DD07423A15BEFE3300E0A370 /* NetworkHelper.m */,
 				DD07424B15BF188F00E0A370 /* Constants.h */,
 				DD07424C15BF188F00E0A370 /* Constants.m */,
+				DD24FEC215BF356C00EB14FE /* TaxonomyTermViewController.h */,
+				DD24FEC315BF356C00EB14FE /* TaxonomyTermViewController.m */,
 			);
 			path = NetworkTest;
 			sourceTree = "<group>";
@@ -228,6 +233,7 @@
 				DD07424915BF08FE00E0A370 /* EdfRecipe.m in Sources */,
 				DD07424A15BF08FE00E0A370 /* GetEdfRecipesResponse.m in Sources */,
 				DD07424D15BF188F00E0A370 /* Constants.m in Sources */,
+				DD24FEC415BF356C00EB14FE /* TaxonomyTermViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +337,7 @@
 				DD07422015BEC93400E0A370 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
