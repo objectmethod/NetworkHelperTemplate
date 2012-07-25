@@ -1,6 +1,6 @@
 @interface NetworkHelper : NSObject
 
-typedef void (^ResponseBlock)(id response, NSError *error);
+typedef void (^ResponseBlock)(id response, NSError *error, int httpResposneStatusCode, NSURL *url);
 
 + (id) sharedNetworkHelper;
 

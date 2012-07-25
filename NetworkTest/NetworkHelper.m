@@ -61,6 +61,9 @@
     [NSURLConnection sendAsynchronousRequest:request queue:self.queue completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
         [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
         
+        NSHTTPURLResponse* httpResponse = (NSHTTPURLResponse*)response;
+        int responseStatusCode = [httpResponse statusCode];
+        
         id results = nil;
         
         if (data) {
@@ -68,7 +71,7 @@
         }
         
         dispatch_async(dispatch_get_main_queue(), ^{
-            completion(results, error);
+            completion(results, error, responseStatusCode, url);
         });
     }];
 }
