@@ -28,19 +28,19 @@
 
 #pragma mark response
 
-- (void) checkResponse:(id)response andError:(NSError*)error fromUrl:(NSURL*)url {
+- (void) checkResponse:(id)response andError:(NSError*)error fromUrl:(NSURL*)url httpResponseStatusCode:(int)httpResponseStatusCode {
     if (error) {
-        [self receivedError:error fromUrl:url];
+        [self receivedError:error fromUrl:url httpResponseStatusCode:httpResponseStatusCode];
     } else {
-        [self receivedResponse:response fromUrl:url];
+        [self receivedResponse:response fromUrl:url httpResponseStatusCode:httpResponseStatusCode];
     }
 }
 
-- (void) receivedResponse:(id)response fromUrl:(NSURL *)url {
+- (void) receivedResponse:(id)response fromUrl:(NSURL *)url httpResponseStatusCode:(int)httpResponseStatusCode {
     
 }
 
-- (void) receivedError:(NSError *)error fromUrl:(NSURL *)url {
+- (void) receivedError:(NSError *)error fromUrl:(NSURL *)url httpResponseStatusCode:(int)httpResponseStatusCode {
     
 }
 
@@ -64,7 +64,7 @@
         
         self.handleResponseBlock = (^(id response, NSError *error, int httpResponseStatusCode, NSURL *url){
             [bself endNetworkRequest];
-            [bself checkResponse:(id)response andError:(NSError*)error fromUrl:url];
+            [bself checkResponse:(id)response andError:(NSError*)error fromUrl:url httpResponseStatusCode:httpResponseStatusCode];
         });
     }
     
